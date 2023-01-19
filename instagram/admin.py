@@ -17,3 +17,6 @@ class PostAdmin(admin.ModelAdmin):
     list_display_links = ['message']
     search_fields = ['message']
     list_filter = ['created_at', 'is_public']
+
+    def message_length(self, post):
+        return f"{len(post.message)} 글자"
