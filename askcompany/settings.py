@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     # locals apps
     'instagram',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -147,3 +148,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # MEDIA_ROOT = os.path.join(BASE_DIR,'..','public','media')
 
 INTERNAL_IPS = ['127.0.0.1']
+
+AUTH_USER_MODEL = 'auth.User'
